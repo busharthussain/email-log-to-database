@@ -1,0 +1,33 @@
+{
+    "name": "bushart/emaillog",
+    "description": "A simple modified email log to database",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://github.com/busharthussain/email-log-to-database"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "bushart\\emaillog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "busharthussain",
+            "email": "busharthussain@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bushart\\emaillog\\EmailLogServiceProvider"
+            ]
+        }
+    }
+}
